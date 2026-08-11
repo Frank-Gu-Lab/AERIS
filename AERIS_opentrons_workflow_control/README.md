@@ -18,7 +18,7 @@ the AERIS workflow on the OT-2 liquid handler, and the JSON files for the custom
 
 
 ## Guidance on usage
-The notebook and associated JSON files should be uploaded to the built-in Opentrons Jupyter Notebook server.The Jupyter Notebook file (`aeris_opentrons_control.ipynb`) should be executed through the Opentrons Jupyter Notebook server, which is set up to (a) Import all necessary libraries (b) Import all necessary hardware, including the custom labware included herein (c) Define the default locations on the bottom CaberPlate (d) define functions that orchestrate the custome movements on the OT-2 deck (e) run the experiment.
+The notebook and associated JSON files should be uploaded to the built-in Opentrons Jupyter Notebook server. The Jupyter Notebook file (`aeris_opentrons_control.ipynb`) should be executed through the Opentrons Jupyter Notebook server, which is set up to (a) Import all necessary libraries (b) Import all necessary hardware, including the custom labware included herein (c) Define the default locations on the bottom CaberPlate (d) define functions that orchestrate the custome movements on the OT-2 deck (e) run the experiment.
 
 ## Running an experiment
 To run an experiment, follow the steps below in stepwise order. 
@@ -27,9 +27,9 @@ To run an experiment, follow the steps below in stepwise order.
 
 (2) Open the notebook and run all cells that import hardware and libraries, as well as all cells within the functions and classes section. This process will home the OT-2 gantry, and set up all defaults. 
 - NOTE: if you want to change your deck layout, make sure to change the locations within the code. 
-- The code is currently setup for manual cleaning. If you would like to automated cleaning uncomment the `clean(...)` function(s) within `caber_run_iter_visc_autocam(...)` before running these cells. Make sure you also change the sponge pad location to reflect the sponge you want to use.
+- The code is currently setup for manual cleaning. If you would like to automate cleaning, uncomment the `clean(...)` function(s) within `caber_run_iter_visc_autocam(...)` before running these cells. Make sure you also change the sponge pad location to reflect the sponge you want to use.
 
-(3) Perform a positional calibration to ensure your top and bottom plates are aligned and centered on the x and y axis, and such that the two plates just begin to touch. Tip: place a Kimwipe between the two plates when calibrating in the z direction. The point at which the two plates touch would be the point at which you feel resistance when trying to move the from side to side. 
+(3) Perform a positional calibration to ensure your top and bottom plates are aligned and centered on the x and y axis, and such that the two plates just begin to touch. Tip: place a Kimwipe between the two plates when calibrating in the z direction. The point at which the two plates touch would be the point at which you feel resistance when trying to move the Kimwipe from side to side. 
 
 Once you are happy with the alignment, test that positioning is consistent across three separate top plates. If you feel positioning is off, perform the calibration again and repeat. When satisfied with the calibration, you can perform the experiments
 
