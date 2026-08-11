@@ -1,0 +1,61 @@
+{
+    "ordering": [
+        [
+            "A1"
+        ]
+    ],
+    "brand": {
+        "brand": "FGL",
+        "brandId": [
+            "FGL"
+        ]
+    },
+    "metadata": {
+        "displayName": "CaBER_Bottom_Plate",
+        "displayCategory": "reservoir",
+        "displayVolumeUnits": "µL",
+        "tags": []
+    },
+    "dimensions": {
+        "xDimension": 127.76,
+        "yDimension": 85.48,
+        "zDimension": 50
+    },
+    "wells": {
+        "A1": {
+            "depth": 5,
+            "totalLiquidVolume": 1000,
+            "shape": "rectangular",
+            "xDimension": 5,
+            "yDimension": 5,
+            "x": 1,
+            "y": 84.48,
+            "z": 45
+        }
+    },
+    "groups": [
+        {
+            "metadata": {
+                "wellBottomShape": "flat"
+            },
+            "wells": [
+                "A1"
+            ]
+        }
+    ],
+    "parameters": {
+        "format": "irregular",
+        "quirks": [],
+        "isTiprack": false,
+        "isMagneticModuleCompatible": false,
+        "loadName": "caber_bottom_plate"
+    },
+    "namespace": "custom_beta",
+    "version": 1,
+    "schemaVersion": 2,
+    "cornerOffsetFromSlot": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+    }
+}
