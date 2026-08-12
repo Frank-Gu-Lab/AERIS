@@ -65,7 +65,9 @@ Within this repository, you will find:
 Use virtual environment of choice (e.g. VSCode) or Terminal to navigate to `imgprocessing.py` and run the script. Follow instructions in the Terminal.
 
 You will first be prompted to enter the file path containing the videos. This is the location of the folder containing the videos you want to analyze, *not* the folder itself. You do NOT need to move your videos to any particular location for this code to work.
-![alt text](image.png)
+<img src="readme_images/image.png" width="100%" height ="100%">
+
+
 In the above image, "glycerol_test" highlighted is the folder that contains the folder "Glycerol". "Glycerol" contains all the videos from the highspeed camera.
 
 - Make sure the address is pasted as a path (no quotations) and not as a string (with quotations)
@@ -76,7 +78,7 @@ In the above image, "glycerol_test" highlighted is the folder that contains the 
 
 - If you don't have one already, the code will create a folder named 00_processed at the file path you provide to initiate analysis. This is where all the analysis and associated metadata will be exported
 
-    ![alt text](image-1.png)
+    <img src="readme_images/image-1.png" width="100%" height ="100%">
 
     - All plate boundary information, cropping parameters, analysis parameters etc. is stored as metadata in a JSON file
     - All extracted contours are exported as .npz files. 
