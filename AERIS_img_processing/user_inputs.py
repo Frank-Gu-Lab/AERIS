@@ -228,7 +228,8 @@ def get_new_cont_params(contour_params: dict = None) -> dict:
             new_params[key] = current_params[key]
         else:
             try:
-                new_params[key] = int(val)
+                expected_type = type(current_params[key])
+                new_params[key] = expected_type(val)
             except:
                 print("Please enter a valid input. Keeping current parameters")
                 new_params[key] = current_params[key]

@@ -171,7 +171,7 @@ def extract_contours(imgs: list[np.ndarray],
                 print(f"frame: {i}, contour_length = {combined.shape}")
         except:
             print(f"Contour analysis failed at index {i} - troubleshoot.")
-            return None, i
+            return frame_contours, i
     return frame_contours, None
 
 
