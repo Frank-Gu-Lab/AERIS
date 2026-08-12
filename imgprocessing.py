@@ -236,6 +236,6 @@ for f in range(s,e):
 
 
 
-# #Both.
-# if step == "both":
-#     ...
+    #Both.
+    if step == "both":
+        print("Under construction. Please run plate and contour analysis separately for now.")
