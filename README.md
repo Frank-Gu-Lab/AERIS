@@ -1,4 +1,4 @@
-# AERIS: An Automate Extensional Rheology Imaging-based system
+# AERIS: An Automated Extensional Rheology Imaging-based system
 
 This repository contains code for performing and analyzing experiments via AERIS. 
 
